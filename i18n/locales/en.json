@@ -1,0 +1,408 @@
+{
+  "site": {
+    "name": "JFDEV",
+    "title": "JFDEV — Software engineering & digital solutions",
+    "brandTagline": "Engineering in motion",
+    "footerTagline": "Engineering, identity and digital solutions."
+  },
+  "common": {
+    "skipToContent": "Skip to content",
+    "opensInNewTab": "(opens in a new tab)",
+    "backToTop": "Back to top",
+    "copyright": "© {year} JFDEV"
+  },
+  "nav": {
+    "label": "Main navigation",
+    "mobileLabel": "Mobile navigation",
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "engineering": "Engineering",
+    "contact": "Contact",
+    "privacy": "Privacy policy",
+    "cta": "Start a project",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "homeLink": "JFDEV, home page"
+  },
+  "theme": {
+    "toggleLabel": "Theme: {theme}. Click to change.",
+    "light": "light",
+    "dark": "dark",
+    "system": "automatic"
+  },
+  "locale": {
+    "switcherLabel": "Language",
+    "switchTo": "Read in {language}"
+  },
+  "home": {
+    "hero": {
+      "overlineLeft": "Software engineering / Digital solutions",
+      "overlineRight": "Curitiba · Brazil / Worldwide",
+      "titleStart": "Ambitious ideas.",
+      "titleHighlight": "Engineering that delivers.",
+      "lead": "We turn business challenges into digital products and experiences, combining strategy, engineering excellence and long-term thinking.",
+      "cta": "Let's talk about your project",
+      "metricsLabel": "JFDEV in numbers",
+      "experienceValue": "13+",
+      "experienceLabel": "Years of experience",
+      "solutionsValue": "Web / App",
+      "solutionsLabel": "Tailored solutions",
+      "globalValue": "BR",
+      "globalLabel": "Global perspective",
+      "proofLabel": "Independent software studio / Brazil",
+      "proofValue": "Technical execution with a product mindset, from the first conversation to the solution's evolution."
+    },
+    "editorial": {
+      "label": "JFDEV commitment",
+      "index": "JF / 01",
+      "text": "Design with intent. Engineering with judgment. Technology for real businesses."
+    },
+    "services": {
+      "kicker": "01 / What we do",
+      "titleStart": "The challenge is yours.",
+      "titleEnd": "The engineering is ours.",
+      "lead": "From planning to delivery, we build software designed to solve real problems.",
+      "webLabel": "01 / Web",
+      "webTitle": "Websites & digital experiences",
+      "webText": "Digital presence with performance, accessibility and identity.",
+      "productsLabel": "02 / Products",
+      "productsTitle": "Custom systems",
+      "productsText": "Platforms and tools built to help your business grow.",
+      "connectionsLabel": "03 / Connections",
+      "connectionsTitle": "Integrations & automation",
+      "connectionsText": "APIs, workflows and services connected securely and efficiently.",
+      "strategyLabel": "04 / Strategy",
+      "strategyTitle": "Software consulting",
+      "strategyText": "Technical vision to guide architecture and product evolution."
+    },
+    "solutions": {
+      "kicker": "02 / When JFDEV steps in",
+      "titleStart": "Your business has a challenge.",
+      "titleEnd": "Let's turn it into a solution.",
+      "lead": "Not every project starts with a ready-made specification. It starts with something that needs to work better.",
+      "startLabel": "01 / Start",
+      "startTitle": "I need to get an idea off the ground.",
+      "startText": "We turn needs into a viable plan and a digital product that can grow with the business.",
+      "startLink": "Explore paths",
+      "evolveLabel": "02 / Evolve",
+      "evolveTitle": "My system needs to keep up with growth.",
+      "evolveText": "We improve existing experiences, integrations and applications to reduce friction and sustain evolution.",
+      "evolveLink": "How we can help",
+      "decideLabel": "03 / Decide",
+      "decideTitle": "I need reliable technical direction.",
+      "decideText": "We support architecture, performance and execution decisions without turning technology into complication.",
+      "decideLink": "About our consulting"
+    },
+    "about": {
+      "kicker": "03 / Who's behind it",
+      "titleStart": "An independent brand.",
+      "titleEnd": "Real experience.",
+      "text": "JFDEV combines the agility of an independent studio with the maturity of a career dedicated to software engineering. We work with clarity, responsibility and attention to detail.",
+      "note": "JFDEV / Founder-led software studio",
+      "link": "See the engineering background",
+      "metricValue": "13+",
+      "metricText": "Years building digital solutions, products and web experiences."
+    },
+    "process": {
+      "kicker": "04 / Our approach",
+      "titleStart": "Method before code.",
+      "titleEnd": "Quality in every decision.",
+      "lead": "A transparent process from the first conversation to continuous evolution.",
+      "discoverLabel": "01 / Discover",
+      "discoverTitle": "Understand",
+      "discoverText": "Clear goals, business context and real opportunities.",
+      "buildLabel": "02 / Build",
+      "buildTitle": "Build",
+      "buildText": "Solid architecture, careful execution and constant communication.",
+      "evolveLabel": "03 / Evolve",
+      "evolveTitle": "Evolve",
+      "evolveText": "Sustainable deliveries, improvements and product growth.",
+      "stackLabel": "Technologies"
+    },
+    "engagement": {
+      "kicker": "05 / Ways to work together",
+      "titleStart": "The right format for",
+      "titleEnd": "every stage of your business.",
+      "lead": "From the first build to evolving an existing product, we shape the scope around your goal.",
+      "projectLabel": "01 / Fixed-scope project",
+      "projectTitle": "Tailored project",
+      "projectText": "For well-defined needs: websites, applications, systems and integrations with agreed deliverables.",
+      "projectLink": "Request a conversation",
+      "partnerLabel": "02 / Continuous evolution",
+      "partnerTitle": "Engineering partner",
+      "partnerText": "For businesses that need ongoing technical support and incremental improvements with shared priorities.",
+      "partnerLink": "Plan the evolution",
+      "consultingLabel": "03 / Consulting",
+      "consultingTitle": "Diagnosis and direction",
+      "consultingText": "For those who need to understand options, assess technical challenges or set a path before investing.",
+      "consultingLink": "Talk about the challenge"
+    },
+    "projects": {
+      "kicker": "06 / Applied experience",
+      "titleStart": "More than technology.",
+      "titleEnd": "Products with purpose.",
+      "lead": "Case studies with real context, decisions and lessons learned.",
+      "tag": "JFDEV / Products and engineering",
+      "cardTitleStart": "Real projects.",
+      "cardTitleEnd": "Decisions that matter.",
+      "cardText": "Own products and authorized case studies, showing challenges, solutions and lessons learned.",
+      "link": "Explore projects and case studies"
+    },
+    "faq": {
+      "kicker": "Frequently asked questions",
+      "title": "No need to complicate what can be simple.",
+      "lead": "A partnership starts with clear expectations. Here are a few answers to make your first contact easier.",
+      "scopeQuestion": "Do I need to have everything defined?",
+      "scopeAnswer": "No. We can start by understanding the problem, the current stage and the goals. The scope is defined after that alignment.",
+      "existingQuestion": "Do you work on existing projects?",
+      "existingAnswer": "Yes. JFDEV can support application evolution, frontend improvements, integrations and engineering decisions, as needed.",
+      "budgetQuestion": "How do budget and timeline work?",
+      "budgetAnswer": "After the first conversation, we assess goals, complexity, priorities and the collaboration format. That way, the proposal presents scope and terms transparently.",
+      "globalQuestion": "Do you work with clients outside Brazil?",
+      "globalAnswer": "Yes. JFDEV works on national and international projects, with communication in Portuguese or English."
+    },
+    "contact": {
+      "kicker": "07 / Let's build something",
+      "title": "Your next idea deserves a great start.",
+      "text": "Tell us what you need to build. We'll find the best path to turn your idea into a real solution.",
+      "whatsapp": "Chat on WhatsApp",
+      "email": "Send an email",
+      "emailSubject": "JFDEV project",
+      "briefLabel": "Which challenge would you like to discuss first?",
+      "briefPlaceholder": "Choose a topic",
+      "topicProject": "Build a website, app or system",
+      "topicEvolution": "Evolve an existing product",
+      "topicConsulting": "Request consulting or a diagnosis",
+      "topicUndecided": "I'm still shaping my idea",
+      "briefCta": "Start the conversation on WhatsApp",
+      "briefNote": "You'll be taken to WhatsApp with a starter message; no data is sent by this website.",
+      "messageGeneric": "Hi! I found JFDEV through the website and would like to talk about a project.",
+      "messageTopic": "Hi! I found JFDEV through the website and would like to talk about: {topic}."
+    }
+  },
+  "projects": {
+    "hero": {
+      "overlineLeft": "JFDEV / Selected work",
+      "overlineRight": "Engineering · Products · Open source",
+      "titleStart": "Real products.",
+      "titleHighlight": "Decisions that matter.",
+      "lead": "A selection of our own products and engineering experience — with context, decisions and lessons learned.",
+      "explore": "Explore projects",
+      "profile": "See engineering profile"
+    },
+    "list": {
+      "kicker": "01 / Selected portfolio",
+      "title": "Building is more than shipping code.",
+      "lead": "Here, the focus is on the problem solved, the solution and the reasoning behind each product.",
+      "filtersLabel": "Filter projects",
+      "filterAll": "All",
+      "filterProduct": "Own products",
+      "filterOpenSource": "Open source",
+      "filterExperience": "Experience",
+      "caseLink": "Read the case study",
+      "empty": "No projects in this category yet.",
+      "experienceTag": "Professional experience",
+      "experienceTitle": "Platforms and applications",
+      "experienceText": "Experience with interfaces, digital commerce, integrations and mobile. Individual cases depend on authorization to publish and on validated results.",
+      "experienceStack": "Frontend · Mobile · APIs",
+      "experienceLink": "See background",
+      "note": "Editorial note: we don't claim quantitative results or specific repositories without published evidence."
+    },
+    "case": {
+      "breadcrumbLabel": "Breadcrumb",
+      "explore": "Explore the case",
+      "back": "Back to projects",
+      "challenge": "The challenge",
+      "approach": "The approach",
+      "capabilitiesKicker": "02 / Product capabilities",
+      "stackKicker": "03 / Stack & engineering",
+      "contextKicker": "01 / Context",
+      "stackLabel": "Project technologies",
+      "ctaTitle": "Got a project that also needs to get off the ground?",
+      "ctaAction": "Talk to JFDEV"
+    },
+    "cta": {
+      "title": "Your business could be our next project.",
+      "action": "Start a conversation"
+    }
+  },
+  "engineering": {
+    "hero": {
+      "overlineLeft": "Engineering profile / JFDEV",
+      "overlineRight": "Curitiba, Brazil · Remote",
+      "titleStart": "The engineer",
+      "titleHighlight": "behind the studio.",
+      "lead": "13+ years of experience in software development, web platforms, digital products and mobile applications.",
+      "trajectory": "My background",
+      "projects": "Explore projects"
+    },
+    "about": {
+      "kicker": "01 / About",
+      "title": "Engineering with a product mindset.",
+      "text": "I'm a Senior Software Engineer experienced in building and evolving applications, working mainly on frontend, integrations, architecture and developer experience. JFDEV turns that background into a software studio focused on quality, clarity and sustainable solutions.",
+      "linkedin": "LinkedIn",
+      "contact": "Contact"
+    },
+    "experience": {
+      "kicker": "02 / Professional experience",
+      "title": "A career built on real products.",
+      "lead": "A selection of organizations and professional contexts, without exposing confidential projects.",
+      "currentLabel": "Current role",
+      "currentRole": "Senior Software Engineer",
+      "currentText": "Software and digital product development. Public details and results will be validated for the final version of the résumé.",
+      "previousLabel": "Previous experience",
+      "previousRole": "Software Engineering / Web & Mobile",
+      "previousText": "Contributions to web products and mobile application initiatives, including banking and marketplace contexts.",
+      "otherLabel": "Background",
+      "otherTitle": "Other experience",
+      "otherRole": "Engineering and development",
+      "otherText": "Roles at organizations such as Avenue Code, BRQ Digital Solutions, Navita and Foursys."
+    },
+    "skills": {
+      "kicker": "03 / Specializations",
+      "title": "Technology applied with judgment.",
+      "lead": "Stacks and skills that support decisions, not just a list of tools.",
+      "frontendLabel": "01 / Frontend",
+      "frontendTitle": "Vue / Nuxt",
+      "frontendText": "Interface architecture, SSR, performance and scalable web experiences.",
+      "softwareLabel": "02 / Software",
+      "softwareTitle": "TypeScript & APIs",
+      "softwareText": "Integrations, maintenance and evolution of applications with technical consistency.",
+      "mobileLabel": "03 / Mobile & fullstack",
+      "mobileTitle": "Mobile / Backend",
+      "mobileText": "Experience with React Native, Node and product-oriented systems development."
+    },
+    "cv": {
+      "kicker": "04 / Résumé & LinkedIn",
+      "title": "Professional résumé",
+      "text": "Résumés in Portuguese and English will be available here. In the meantime, see the LinkedIn profile or request the résumé by email.",
+      "linkedin": "View LinkedIn",
+      "request": "Request résumé by email",
+      "requestSubject": "JFDEV résumé",
+      "badgeTitle": "LinkedIn profile",
+      "badgeLoading": "Loading the LinkedIn profile…",
+      "badgeFallback": "Open the full profile on LinkedIn"
+    },
+    "cta": {
+      "title": "Need technical experience for your next challenge?",
+      "action": "Talk about a project"
+    }
+  },
+  "privacy": {
+    "hero": {
+      "overlineLeft": "Privacy policy / JFDEV",
+      "updatedAt": "Updated {date}",
+      "titleStart": "Your data,",
+      "titleHighlight": "handled with clarity.",
+      "lead": "How JFDEV collects, uses and protects personal data on this site and in the products and projects it builds.",
+      "contact": "Ask about privacy"
+    },
+    "tocLabel": "On this page",
+    "scope": {
+      "title": "1. Who this policy applies to",
+      "p1": "This policy covers this website and, in general, the products, apps and systems built by JFDEV, the brand under which José Fontana works as a software engineer.",
+      "p2": "Some products may have their own policy, shown inside the product. In that case, the specific policy prevails wherever it is more detailed."
+    },
+    "roles": {
+      "title": "2. Own products and client projects",
+      "p1": "For JFDEV's own products, JFDEV is the data controller: it decides why and how personal data is processed.",
+      "p2": "For systems built for clients, the client is the controller of its users' data. JFDEV acts as a processor, following the client's instructions, and the client's privacy policy applies."
+    },
+    "collected": {
+      "title": "3. What data we collect",
+      "p1": "We only collect what each purpose requires:",
+      "contact": "Data you send when you get in touch, such as your name, email, phone number and message.",
+      "account": "Account and usage data in the products, such as your login and the information you enter yourself.",
+      "technical": "Technical data logged by the servers, such as IP address, browser and access date and time, needed for security and operation.",
+      "p2": "With your permission, this site uses Google Analytics to measure pages visited, device type and approximate location in aggregate. The analytics tag loads only after you accept. This site does not use advertising."
+    },
+    "purposes": {
+      "title": "4. How we use data",
+      "p1": "We use personal data to reply to messages, deliver contracted services and run the products, keep things secure and prevent fraud, and meet legal obligations. Each use relies on a legal basis under Brazil's General Data Protection Law (LGPD), such as performance of a contract, legitimate interest, legal obligation or consent.",
+      "p2": "JFDEV does not sell personal data."
+    },
+    "sharing": {
+      "title": "5. Sharing",
+      "p1": "Personal data is only shared with providers needed to run the service, such as hosting, email delivery, payment providers and audience measurement (Google, when you allow it), and with authorities when required by law.",
+      "p2": "Some of these providers may store data outside Brazil. In those cases, the transfer follows the safeguards set out in the LGPD."
+    },
+    "security": {
+      "title": "6. Storage and security",
+      "p1": "We apply technical and organizational measures to protect data, such as encrypted connections (HTTPS), least-privilege access control and backups.",
+      "p2": "No system is completely immune to failure. If a relevant security incident occurs, affected people and Brazil's National Data Protection Authority (ANPD) will be notified, as the law requires."
+    },
+    "cookies": {
+      "title": "7. Cookies and local storage",
+      "p1": "This site stores your theme preference and your choice about analytics cookies in your browser. If you accept, Google Analytics also sets its own cookies, such as _ga, to count visits. You can change your choice at any time.",
+      "p2": "Products may use essential cookies, for example to keep you signed in. If a product starts using non-essential cookies, you will be informed and, where required, asked for consent.",
+      "manage": "Manage cookies"
+    },
+    "retention": {
+      "title": "8. How long we keep data",
+      "p1": "Data is kept only for as long as the purpose it was collected for requires, or as needed to meet legal obligations. After that, it is deleted or anonymized."
+    },
+    "rights": {
+      "title": "9. Your rights",
+      "p1": "Under the LGPD, you can request at any time:",
+      "access": "Confirmation that we process your data, and access to it.",
+      "correction": "Correction of incomplete, inaccurate or outdated data.",
+      "deletion": "Anonymization, blocking or deletion of unnecessary data or data processed unlawfully.",
+      "portability": "Portability of your data to another provider.",
+      "sharing": "Information about who your data has been shared with.",
+      "consent": "Withdrawal of consent, when consent is the basis for processing.",
+      "p2": "To exercise these rights, use the contact at the end of this page. For client projects, we will forward your request to the responsible controller."
+    },
+    "children": {
+      "title": "10. Children and teenagers",
+      "p1": "JFDEV's products are not aimed at children. If data from children or teenagers is processed, it will be in their best interest and, where required, with a parent or guardian's consent."
+    },
+    "changes": {
+      "title": "11. Changes to this policy",
+      "p1": "This policy may be updated to reflect changes in the products or in the law. The last update date is shown at the top of the page, and relevant changes will be announced in the products themselves."
+    },
+    "contact": {
+      "title": "12. Contact",
+      "p1": "Questions, requests or complaints about privacy can be sent by email. You can also contact the ANPD.",
+      "email": "Send an email"
+    }
+  },
+  "consent": {
+    "configure": "Configure",
+    "analytics": "Allow analytics cookies",
+    "save": "Save preferences",
+    "label": "Cookie preferences",
+    "text": "We use Google Analytics cookies to understand, in aggregate, how this site is used. They are only enabled if you allow them.",
+    "policy": "Privacy policy",
+    "decline": "Decline",
+    "accept": "Accept"
+  },
+  "error": {
+    "notFound": {
+      "title": "Page not found",
+      "description": "The address you visited doesn't exist or has moved."
+    },
+    "generic": {
+      "title": "Something went wrong",
+      "description": "An unexpected error occurred. Please try again in a moment."
+    },
+    "backHome": "Back to home"
+  },
+  "seo": {
+    "home": {
+      "description": "JFDEV — software engineering and digital solutions: websites, custom systems, integrations and consulting for businesses that want to evolve."
+    },
+    "projects": {
+      "title": "Projects",
+      "description": "JFDEV's own products, case studies and engineering experience, with context, decisions and lessons learned."
+    },
+    "engineering": {
+      "title": "Engineering",
+      "description": "Engineering profile of José Fontana, the Senior Software Engineer behind JFDEV: background, specializations and résumé."
+    },
+    "privacy": {
+      "title": "Privacy policy",
+      "description": "How JFDEV collects, uses, shares and protects personal data on this site and in the products, apps and systems it builds, under Brazil's LGPD."
+    }
+  }
+}

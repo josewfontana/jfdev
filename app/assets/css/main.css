@@ -1,0 +1,259 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+ * JFDEV design tokens — source: JFDEV brand manual v1.3 (Visual Identity System).
+ *
+ * Manual principles enforced here:
+ * - Charcoal + Ivory are the base; Muted Teal guides actions; Terracotta is an ACCENT,
+ *   never the dominant reading color.
+ * - "Do not invent colors": the only colors are the brand ones below + the semantic theme
+ *   values approved by José (light/dark). `--color-*: initial` removes Tailwind's palette.
+ * - Radius 4–12px, 4/8px spacing scale, subtle motion respecting reduced motion.
+ */
+@theme {
+  --color-*: initial;
+
+  /* Brand (never change between themes). Use `brand-*` only where the color IS the identity. */
+  --color-brand-charcoal: #242725;
+  --color-brand-ivory: #F5F0E7;
+  --color-brand-teal: #507F78;
+  --color-brand-deep-teal: #004B49;
+  --color-brand-terracotta: #C46F56;
+  --color-white: #FFFFFF;
+
+  /* Typography — titles 700/600, body 400/500, UI 500/600 */
+  --font-heading: "Space Grotesk Variable", "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "DM Sans Variable", "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+
+  /* Type scale (fluid). Utilities: text-display, text-section, text-card, text-lead, text-eyebrow */
+  --text-display: clamp(2.75rem, 7.5vw, 7.25rem);
+  --text-display--line-height: 1;
+  --text-display--letter-spacing: -0.065em;
+  --text-section: clamp(2.25rem, 5vw, 4.75rem);
+  --text-section--line-height: 1.06;
+  --text-section--letter-spacing: -0.055em;
+  --text-card: clamp(1.5rem, 2.6vw, 2.375rem);
+  --text-card--line-height: 1.12;
+  --text-card--letter-spacing: -0.045em;
+  --text-lead: clamp(1.25rem, 2.1vw, 1.75rem);
+  --text-lead--line-height: 1.4;
+  --text-lead--letter-spacing: -0.025em;
+  --text-eyebrow: 0.6875rem;
+  --text-eyebrow--line-height: 1.4;
+  --text-eyebrow--letter-spacing: 0.16em;
+
+  /* Layout: max-w-site (page grid), max-w-content (long text), px-gutter, py-section */
+  --container-site: 89.375rem;
+  --container-content: 48rem;
+  --spacing-gutter: clamp(1.25rem, 6vw, 5.75rem);
+  --spacing-section: clamp(5rem, 10vw, 9.5rem);
+  --spacing-header: 5.5rem;
+
+  /* Shape — manual: discreet corners, 4–12px */
+  --radius-control: 4px;
+  --radius-card: 8px;
+
+  /* Motion — subtle */
+  --ease-out-soft: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --default-transition-duration: 200ms;
+  --default-transition-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/*
+ * Semantic theme values (approved by José). Light: :root and `.theme-light` scope.
+ * Contrast: foreground/background 13.3:1, text-muted/background 4.6:1, text-muted/surface-elevated
+ * 4.55:1, primary-foreground/primary 10:1, primary-hover 11.6:1.
+ * accent (#C46F56) is 3.2:1 on background: decorative or large text only.
+ */
+:root,
+.theme-light {
+  color-scheme: light;
+
+  --background: #F5F0E7;
+  --surface: #FFFFFF;
+  --surface-elevated: #EDEFE9;
+
+  --foreground: #242725;
+  --foreground-inverse: #F5F0E7;
+  --text-muted: #616F69;
+
+  --primary: #004B49;
+  --primary-foreground: #FFFFFF;
+  --primary-hover: #123F3D;
+
+  --accent: #C46F56;
+
+  --border-default: #D6DBD0;
+}
+
+/*
+ * Dark: `.dark` on <html> (theme toggle) and `.theme-dark` scope. Brand bands (hero, footer,
+ * charcoal sections) use `.theme-dark` so they look the same in both themes.
+ * Contrast: foreground/background 13.3:1, text-muted 8.5:1 (6.8:1 on surface), primary 8.4:1,
+ * accent 7.1:1, primary-foreground/primary 8.4:1.
+ */
+.dark,
+.theme-dark {
+  color-scheme: dark;
+
+  --background: #242725;
+  --surface: #303834;
+  --surface-elevated: #38443E;
+
+  --foreground: #F5F0E7;
+  --foreground-inverse: #242725;
+  --text-muted: #B6C6BE;
+
+  --primary: #A4C9BC;
+  --primary-foreground: #242725;
+  --primary-hover: #B8DAD0;
+
+  --accent: #E5A28D;
+
+  --border-default: #64766C;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+
+  --color-foreground: var(--foreground);
+  --color-foreground-inverse: var(--foreground-inverse);
+  --color-text-muted: var(--text-muted);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-hover: var(--primary-hover);
+
+  --color-accent: var(--accent);
+  --color-border-default: var(--border-default);
+}
+
+/* Decorative precision grid used on brand cards (lines in ivory, low opacity). */
+@utility bg-grid {
+  background-image:
+    linear-gradient(color-mix(in oklab, var(--color-brand-ivory) 18%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklab, var(--color-brand-ivory) 18%, transparent) 1px, transparent 1px);
+  background-size: 2.75rem 2.75rem;
+}
+
+@layer base {
+  html {
+    @apply bg-background font-body text-foreground antialiased;
+    scroll-padding-top: calc(var(--spacing-header) + 1rem);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading font-semibold;
+  }
+
+  ::selection {
+    @apply bg-brand-deep-teal text-white;
+  }
+
+  /*
+   * Focus: Terracotta passes 3:1 on ivory (3.2) and charcoal (4.1). Terracotta bands set
+   * `[--focus-ring:var(--color-white)]` (3.65:1) because terracotta-on-terracotta is invisible.
+   */
+  :focus-visible {
+    outline: 2px solid var(--focus-ring, var(--color-brand-terracotta));
+    outline-offset: 3px;
+  }
+}
+
+/*
+ * Vue <Transition> classes. Motion only when the user has not asked to reduce it;
+ * otherwise elements swap instantly.
+ */
+@media (prefers-reduced-motion: no-preference) {
+  .page-enter-active,
+  .page-leave-active {
+    transition:
+      opacity 200ms var(--ease-out-soft),
+      transform 200ms var(--ease-out-soft);
+  }
+
+  .page-enter-from {
+    opacity: 0;
+    transform: translateY(0.5rem);
+  }
+
+  .page-leave-to {
+    opacity: 0;
+  }
+
+  .icon-swap-enter-active,
+  .icon-swap-leave-active {
+    transition:
+      opacity 150ms var(--ease-out-soft),
+      transform 150ms var(--ease-out-soft);
+  }
+
+  .icon-swap-enter-from {
+    opacity: 0;
+    transform: rotate(-90deg) scale(0.6);
+  }
+
+  .icon-swap-leave-to {
+    opacity: 0;
+    transform: rotate(90deg) scale(0.6);
+  }
+
+  .menu-enter-active,
+  .menu-leave-active {
+    transition:
+      opacity 180ms var(--ease-out-soft),
+      transform 180ms var(--ease-out-soft);
+  }
+
+  .menu-enter-from,
+  .menu-leave-to {
+    opacity: 0;
+    transform: translateY(-0.5rem);
+  }
+}
+
+/* Long-form Markdown (Nuxt Content). Typography comes from tokens; no classes in the Markdown. */
+@layer components {
+  .prose {
+    @apply text-lg leading-relaxed text-text-muted;
+
+    & > * + * {
+      @apply mt-5;
+    }
+
+    & a {
+      @apply font-semibold text-primary underline underline-offset-4 hover:text-primary-hover;
+    }
+
+    & strong {
+      @apply font-semibold text-foreground;
+    }
+
+    & ul {
+      @apply list-disc pl-6;
+    }
+
+    & ol {
+      @apply list-decimal pl-6;
+    }
+
+    & h2,
+    & h3 {
+      @apply mt-10 text-card text-foreground;
+    }
+  }
+}
