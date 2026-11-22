@@ -1,0 +1,58 @@
+name: JFDEV | Build Nitro
+
+on:
+  push:
+    branches: [main, feat/release-ga4]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: node:22-bullseye
+    timeout-minutes: 20
+    defaults:
+      run:
+        shell: bash
+    env:
+      NUXT_PUBLIC_SITE_URL: https://jfdev.com.br
+      NUXT_PUBLIC_GA4_ID: ''
+      NUXT_TELEMETRY_DISABLED: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Install dependencies
+        run: |
+          corepack enable
+          pnpm install --frozen-lockfile
+      - name: Check and build
+        run: |
+          pnpm check
+          pnpm build
+          test -f .output/server/index.mjs
+      - name: Verify Nitro routes
+        run: |
+          NITRO_HOST=127.0.0.1 NITRO_PORT=3300 node .output/server/index.mjs > /tmp/jfdev-nitro.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid" 2>/dev/null || true' EXIT
+          curl --fail --silent --show-error --retry 8 --retry-connrefused --retry-delay 1 --max-time 5 http://127.0.0.1:3300/ -o /dev/null
+          for route in /privacy /en/privacy; do
+            curl --fail --silent --show-error --max-time 5 "http://127.0.0.1:3300$route" -o /dev/null
+          done
+      - name: Package release
+        run: |
+          tar -czf jfdev-nitro.tar.gz .output
+          sha256sum jfdev-nitro.tar.gz > jfdev-nitro.tar.gz.sha256
+      - uses: actions/upload-artifact@v4
+        with:
+          name: jfdev-nitro-${{ github.sha }}
+          path: |
+            jfdev-nitro.tar.gz
+            jfdev-nitro.tar.gz.sha256
+          if-no-files-found: error
+          retention-days: 7
