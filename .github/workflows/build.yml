@@ -20,7 +20,8 @@ jobs:
         shell: bash
     env:
       NUXT_PUBLIC_SITE_URL: https://jfdev.com.br
-      NUXT_PUBLIC_GA4_ID: ''
+      # Only production builds (push to main) get analytics; PRs and branches stay clean.
+      NUXT_PUBLIC_GA4_ID: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' && vars.JFDEV_GA4_ID || '' }}
       NUXT_TELEMETRY_DISABLED: '1'
     steps:
       - uses: actions/checkout@v4
